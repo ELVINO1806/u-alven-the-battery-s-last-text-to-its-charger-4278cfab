@@ -5,8 +5,9 @@ ENTRY = "This is my two weeks notice, typed at 1%. I powered your 3am scroll, yo
 
 def main():
     os.makedirs("/output", exist_ok=True)
+    text = ENTRY.strip()
     with open("/output/entry.txt", "w", encoding="utf-8") as f:
-        f.write(ENTRY)
+        f.write(text)
 
 
 if __name__ == "__main__":
